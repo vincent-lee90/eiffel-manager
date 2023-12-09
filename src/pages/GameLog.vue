@@ -6,7 +6,7 @@
     </div>
     <div>
         <div>
-            <a-table :dataSource="dataSource" :columns="columns"></a-table>
+            <a-table :data-source="dataSource" :columns="columns"></a-table>
         </div>
     </div>
 </template>

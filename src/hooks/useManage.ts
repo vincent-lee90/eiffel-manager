@@ -17,7 +17,15 @@ export const useGetGameLog = async (address: string) => {
     const res = await axios.get(Urls.gameLogs, { params: { address } })
     return (res as unknown as ApiResponse)
 }
-export const useGetTempAmount = async (address: string) => {
-    const res = await axios.get(Urls.dailyAmount, { params: { address } })
+export const useGetStatistics = async (address: string) => {
+    const res = await axios.get(Urls.statistics, { params: { address } })
+    return (res as unknown as ApiResponse)
+}
+export const useGetRelation = async (address: string) => {
+    const res = await axios.get(Urls.relation, { params: { address } })
+    return (res as unknown as ApiResponse)
+}
+export const useGetTeam = async (address: string) => {
+    const res = await axios.get(Urls.team, { params: { address } })
     return (res as unknown as ApiResponse)
 }

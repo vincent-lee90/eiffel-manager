@@ -16,6 +16,15 @@
         <a-menu-item key="game.log">
           <span>游戏日志</span>
         </a-menu-item>
+        <a-menu-item key="relation">
+          <span>邀请查询</span>
+        </a-menu-item>
+        <a-menu-item key="team.members">
+          <span>团队成员查询</span>
+        </a-menu-item>
+        <a-menu-item key="temp.amount">
+          <span>流水查询</span>
+        </a-menu-item>
       </a-menu>
     </a-layout-sider>
     <a-layout>
@@ -27,7 +36,6 @@
       <a-layout-content class="p-8">
         <router-view></router-view>
       </a-layout-content>
-
     </a-layout>
   </a-layout>
 </template>
