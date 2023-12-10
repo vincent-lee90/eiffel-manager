@@ -29,3 +29,15 @@ export const useGetTeam = async (address: string) => {
     const res = await axios.get(Urls.team, { params: { address } })
     return (res as unknown as ApiResponse)
 }
+export const useLogin = async (user: string, password: string) => {
+    const res = await axios.post(Urls.login, { user, password })
+    return (res as unknown as ApiResponse)
+}
+export const useGetMintList = async () => {
+    const res = await axios.get(Urls.mintList)
+    return (res as unknown as ApiResponse)
+}
+export const useManualMint = async (address:any, cardId:any) => {
+    const res = await axios.post(Urls.manualMint, { address, cardId })
+    return (res as unknown as ApiResponse)
+}
